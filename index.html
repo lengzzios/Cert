@@ -13,21 +13,21 @@
   <body>
     <input type="file" name="uploadfile" class="hide" onchange="handleFileUpload(this.files, $(this))" data-target="" id="uploadfile" />
     <div class="content container mt-80 inner-content">
-      <h3 class="text-center font-36 font-cert-check-title">iOS Certificates Are detected Online</h3>
-      <h3 class="text-center font-16 mt-20 color-8c9497">Want to check the certificate expiration time? User feedback can't download the installation? Check online for you if your iOS certificate is working</h3>
+      <h3 class="text-center font-36 font-cert-check-title">iOS 证书在线检测</h3>
+      <h3 class="text-center font-16 mt-20 color-8c9497">想检查证书到期时间？用户反馈无法下载安装？为您在线检测 iOS 证书是否正常</h3>
       <div class="text-center cert mt-30 col-md-8 col-md-offset-2">
         <div class="form-horizontal text-center" id="checkStatus">
           <div id="certCheckTabContent" class="tab-content">
             <div class="tab-pane fade active in " id="certFile">
-              <h5 class="url-title mb-30">Please upload your iOS p12 certificate and mobilprovision files</h5>
+              <h5 class="url-title mb-30">请上传 iOS p12 证书及 mobilprovision 文件</h5>
               <div class="container-fluid file-upload-container">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="upload-img-init " id="uploadCert">
                       <img id="" src="images/p12_file_2x.png" class="img-responsive center-block file-icon" />
                       <div class="text-center upload-tips">
-                        <p>click select file or drag file to this area</p>
-                        <p> (support for p12 format certificates) </p>
+                        <p>点击选择文件或拖拽文件至此区域</p>
+                        <p>（支持 p12 格式证书）</p>
                       </div>
                     </div>
                   </div>
@@ -36,15 +36,15 @@
                       <img id="" src="images/optional_icon_2x.png" class="img-responsive center-block file-icon optional-icon" />
                       <img id="" src="images/mp_icon_2x.png" class="img-responsive center-block file-icon" />
                       <div class="text-center upload-tips">
-                        <p>click select file or drag file to this area</p>
-                        <p> (supports mobileprovision format files) </p>
+                        <p>点击选择文件或拖拽文件至此区域</p>
+                        <p>（支持 mobileprovision 格式文件）</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-8 col-md-offset-2">
                     <div class="form-group">
-                      <span for="name" class="font-16">p12 certificate password:</span>
-                      <input name="password" type="password" id="password" class="form-control" placeholder="If the password is empty, it can not be filled in" />
+                      <span for="name" class="font-16">p12 证书密码：</span>
+                      <input name="password" type="password" id="password" class="form-control" placeholder="如密码为空可不填" />
                     </div>
                   </div>
                 </div>
@@ -52,7 +52,7 @@
               </div>
             </div>
             <div class="hide text-center" id="certResult">
-              <h5 class="url-title mb-30">detect now</h5>
+              <h5 class="url-title mb-30">检测结果</h5>
               <p class="hide" id="errorMsg">
                 <span style="color: #FD5A5A; font-size: 18px;"></span>
                 <a
@@ -77,7 +77,7 @@
                     </div>
                     <div class="text-left" style="">
                       <p class="">
-                        <span class="">The status of the certificate</span>
+                        <span class="">证书状态</span>
                       </p>
                       <p class="" style="margin-bottom:0">
                         <span class="font-18" style="font-weight:600">
@@ -102,22 +102,22 @@
                   </div>
                   <div class="col-md-12" style="">
                     <p class="check-item" style="">
-                      <span class="text-right item-title" style="">The name of the certificate：</span>
+                      <span class="text-right item-title" style="">证书名称：</span>
                       <span class="text-left item-result certNameSpan" id="certName"></span>
                     </p>
 
                     <p class="check-item">
-                      <span class="text-right item-title">Expiration time：</span>
+                      <span class="text-right item-title">过期时间：</span>
                       <span class="text-left item-result certExpireDateSpan" id="certExpireDate"></span>
                     </p>
 
                     <div class="provision-detail hide">
                       <p class="check-item">
-                        <span class="text-right item-title">mobileprovision state：</span>
+                        <span class="text-right item-title">mobileprovision 状态：</span>
                         <span class="text-left item-result" id="provisionStatus"></span>
                       </p>
                       <p class="check-item">
-                        <span class="text-right item-title">mobileprovision Expiration time：</span>
+                        <span class="text-right item-title">mobileprovision 过期时间：</span>
                         <span class="text-left item-result" id="provisionExpireDate"></span>
                       </p>
                       <p class="check-item provisionSignType hide">
@@ -139,7 +139,7 @@
                   </div>
                   <div class="col-md-12" style="">
                     <p class="check-item">
-                      <span class="text-right item-title">The status of the certificate：</span>
+                      <span class="text-right item-title">证书状态：</span>
                       <span class="font-18 text-left item-result" style="font-weight:500">
                         <span class="certStatusSpan" id="certStatus"></span>
                         <a
@@ -160,17 +160,17 @@
                     </p>
 
                     <p class="check-item" style="">
-                      <span class="text-right item-title">The name of the certificate：</span>
+                      <span class="text-right item-title">证书名称：</span>
                       <span style="" class="text-left item-result certNameSpan" id="certName"></span>
                     </p>
 
                     <p class="check-item">
-                      <span class="text-right item-title">Expiration time：</span>
+                      <span class="text-right item-title">过期时间：</span>
                       <span class="text-left item-result certExpireDateSpan" id="certExpireDate"></span>
                     </p>
 
                     <p class="check-item appName hide">
-                      <span class="text-right item-title">The app name：</span>
+                      <span class="text-right item-title">应用名称：</span>
                       <span class="text-left item-result appName hide" id="appName"></span>
                     </p>
                   </div>
@@ -179,18 +179,17 @@
             </div>
             <div class="text-center row hide" id="search">
               <img src="images/search.gif" class="img-responsive center-block" />
-              <p class="">detection...</p>
+              <p class="">检测中...</p>
             </div>
           </div>
           <div class="row mb-30">
             <a style="display: inline-block; padding: 6px 13px;" class="btn-u h-30 mt-30 btn-check hide" id="recheckBtn" onclick="toggleRes()"> <span class="font-13">继续检测其他证书</span></a>
-            <button class="btn-u h-30 mt-30 btn-check" id="submitButton"><span class="font-13">Detect now</span></button>
+            <button class="btn-u h-30 mt-30 btn-check" id="submitButton"><span class="font-13">立即检测</span></button>
           </div>
           <div class="alert alert-warning alert-dismissablewarning mb-0 mt-50 text-left" id="fileCheckAlert" style="border-radius:0;border:none;color:#555; margin-bottom: 0px;">
-            <i class="fa fa-exclamation-circle"></i><span class="ml-5" style="margin-left:5px;">The certificate files and passwords you submit will only be used for this certificate validity test and will not be stored
-              。</span> <br />
+            <i class="fa fa-exclamation-circle"></i><span class="ml-5" style="margin-left:5px;">您提交的证书文件和密码，将仅用于本次证书有效性检测，我们不会进行存储。</span> <br />
             <i class="fa fa-exclamation-circle"></i
-            ><span class="ml-5" style="margin-left:5px;">Certificate detection results 100% accuracy</span>
+            ><span class="ml-5" style="margin-left:5px;">证书检测结果精准性100%</span>
           </div>
         </div>
       </div>
